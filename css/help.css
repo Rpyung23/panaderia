@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+    background-color: #76D7C4;
+    color: black;
+}
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+.contenedor img{
+	width: 280px;
+	height: 100px;
+    padding: 10px;
+}
+header {
+    background-color: #566573;
+}
+/* poner a la izquierda*/
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* color de la lista*/
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #CD6155;
+}
+
+.titulo{
+	font-family: 'Dancing Script', cursive;
+    color: #B7950B;
+    font-size: 60px;
+    text-align: center;
+    padding: 25px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.gen{
+    margin-top: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    color:gray;
+    border-left-style:none;
+    margin-left: 10px;
+}
+/* Menú */
+.Menu{
+    background-color: #566573;
+    margin-top: 15px;
+    margin-left: 40px;
+    width: 20em;
+    border-width: thin;
+	float: left;
+    position: sticky;
+    top: 20px;
+    opacity: 85%;
+}
+.Menu nav{
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: .3s ease all;
+	color: #BBBBBB;
+    font-size: 15px;
+    margin-left: 20px;
+}
+.Menu nav a{
+    padding: 30px;
+    margin-left: 20px;
+    color: black;
+}
+a h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+a h3:hover {
+    padding: 5px;
+	background: #CD6155;
+	color: white;
+    border: none;
+}
+
+/* Secciones */
+.secciones{
+    margin-top: 20px;
+    margin-left: 400px;
+    margin-right: 60px;
+}
+.secciones .nombre{
+    color:#1A5276;
+}
+.secciones div{
+    margin-top: 20px;
+}
+.descripcion{
+    margin-top: 10px;
+}
+.b img{
+    display: block;
+    margin: auto;
+}
+.e img{
+    display: block;
+    margin: auto;
+}
+.f img{
+    display: block;
+    margin: auto;
+}
+.g img{
+    display: block;
+    margin: auto;
+}
+.secciones img{
+    /* display: block;
+    margin: auto;
+    padding: 30px;*/
+    margin-top: 15px;
+}
+.secciones div h3{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.secciones div h5{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+}
+.secciones div h4{
+    font-size: 20px;
+    text-align: justify;
+}
+footer{
+    font-size: 17px;
+    color: white;
+    padding: 5px;
+    margin-top: 60px;
+    text-align: center;
+    background-color: #566573;
+   
+}
+

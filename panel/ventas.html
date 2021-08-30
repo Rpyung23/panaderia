@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/sweet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.11.0/datatables.min.css"/>
+
+
+</head>
+
+<body id="body-pd">
+
+    <div>
+        <header class="header" id="header">
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+
+            <div class="header__img">
+                <img src="../img/perfil.jpg" alt="">
+            </div>
+        </header>
+        <div class="l-navbar" id="nav-bar">
+            <nav class="nav">
+                <div>
+                    <a href="index.html" class="nav__logo">
+                        <i class='bx bx-layer nav__logo-icon'></i>
+                        <span class="nav__logo-name">Hornitos</span>
+                    </a>
+
+                    <div class="nav__list">
+                        <a href="index.html" class="nav__link">
+                            <i class='bx bx-grid-alt nav__icon' ></i>
+                            <span class="nav__name">Dashboard</span>
+                        </a>
+
+                        <a href="producto.html" class="nav__link">
+
+                            <i class='bx bx-cake nav__icon'></i>
+
+                            <span class="nav__name">Producto</span>
+                        </a>
+
+                        <a href="provedor.html" class="nav__link">
+                            <i class='bx bx-building-house nav__icon'></i>
+                            <span class="nav__name">Proveedor</span>
+                        </a>
+
+                        <a href="ventas.html" class="nav__link active">
+
+                            <i class='bx bx-money nav__icon'></i>
+                            <span class="nav__name">Ventas</span>
+                        </a>
+
+                        <a href="reportes.html" class="nav__link">
+                            <i class='bx bx-bar-chart-alt-2 nav__icon' ></i>
+                            <span class="nav__name">Reportes</span>
+                        </a>
+
+                        <a href="../Ayuda.html" target="_blank" class="nav__link">
+                            <i class='bx bx-help-circle' ></i>
+                            <span class="nav__name">Ayuda</span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <a href="../index.php" class="nav__link">
+                    <i class='bx bx-log-out nav__icon' ></i>
+                    <span class="nav__name">Log Out</span>
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <h1>Ventas</h1>
+    <br>
+    <div>
+        <div class="modal-personallizado">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="inputEmail4">Fecha</label>
+                        <input type="text" id="fecha_venta"  disabled class="form-control" >
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputEmail4">Producto</label>
+                        <select class="form-control" id="select_producto">
+
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputPassword4">Cantidad</label>
+                        <input type="number" min="1" id="id_cantidad_a_vender" class="form-control">
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group col-md-3">
+                        <label for="inputAddress2">Cant. Disponible</label>
+                        <input type="text" id="id_tel_provedor" disabled class="form-control" value="1">
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        <label for="inputEmail4">Precio U.</label>
+                        <input type="email" id="id_precio_uni" disabled class="form-control" >
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputPassword4">Precio T.</label>
+                        <input type="text" id="id_precio_tot" disabled class="form-control">
+                    </div>
+
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Factura con Datos
+                    </label>
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group col-md-3">
+                        <label for="inputAddress2">DNI / Cliente</label>
+                        <input type="text" disabled id="id_dni_client" value="9999999999999" class="form-control">
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        <label for="inputEmail4">Nombres y Apellidos</label>
+                        <input type="email" disabled id="id_names_client"  value="Consumidor Final" class="form-control" >
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputPassword4">Valor a Pagar</label>
+                        <input type="text" id="id_valor_pagar" disabled class="form-control">
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <button type="button" id="btn_add_table" class="btn btn-primary">Ingresar Producto</button>
+                        <button type="button" id="btn_factura" class="btn btn-info">Generar Factura</button>
+                        <button type="button" id="btn_print_table" class="btn btn-info">Imprimir Factura</button>
+                        <button type="button" id="btn_cancelar_table" class="btn btn-danger">Cancelar Factura</button>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    <br>
+    <table class="table" id="example">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Producto</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Precio Uni.</th>
+            <th scope="col">Precio Tot.</th>
+            <th scope="col">Eventos</th>
+        </tr>
+        </thead>
+        <tbody id="table_factura">
+        </tbody>
+    </table>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/ventas.js"></script>
+
+
+
+</body>
+
+</html>

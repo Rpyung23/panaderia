@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <title>Panel</title>
+    </head>
+    <body id="body-pd">
+        <header class="header" id="header">
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+
+            <div class="header__img">
+                <img src="../img/perfil.jpg" alt="">
+            </div>
+        </header>
+
+        <div class="l-navbar" id="nav-bar">
+            <nav class="nav">
+                <div>
+                    <a href="index.html" class="nav__logo">
+                        <i class='bx bx-layer nav__logo-icon'></i>
+                        <span class="nav__logo-name">Hornitos</span>
+                    </a>
+
+                    <div class="nav__list">
+                        <a href="index.html" class="nav__link active">
+                        <i class='bx bx-grid-alt nav__icon' ></i>
+                            <span class="nav__name">Dashboard</span>
+                        </a>
+
+                        <a href="producto.html" class="nav__link">
+
+                            <i class='bx bx-cake nav__icon'></i>
+
+                            <span class="nav__name">Producto</span>
+                        </a>
+                        
+                        <a href="provedor.html" class="nav__link">
+                            <i class='bx bx-building-house nav__icon'></i>
+                            <span class="nav__name">Proveedor</span>
+                        </a>
+
+                        <a href="ventas.html" class="nav__link">
+
+                            <i class='bx bx-money nav__icon'></i>
+                            <span class="nav__name">Ventas</span>
+                        </a>
+
+                        <a href="reportes.html" class="nav__link">
+                            <i class='bx bx-bar-chart-alt-2 nav__icon' ></i>
+                            <span class="nav__name">Reportes</span>
+                        </a>
+
+                        <a href="../Ayuda.html" target="_blank" class="nav__link">
+                            <i class='bx bx-help-circle' ></i>
+                            <span class="nav__name">Ayuda</span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <a href="../index.php" class="nav__link">
+                    <i class='bx bx-log-out nav__icon' ></i>
+                    <span class="nav__name">Log Out</span>
+                </a>
+            </nav>
+        </div>
+
+        <h1>Dashboard</h1>
+        <!--===== MAIN JS =====-->
+        <br>
+
+        <div style="width:200px !important;height: 250px !important;">
+            <div id="ventas" class="w3-panel w3-card w3-yellow"></div>
+            <div id="producto" class="w3-panel w3-card-2 w3-yellow"></div>
+            <div id="proveedor" class="w3-panel w3-card-4 w3-yellow"></div>
+        </div>
+
+
+        <script src="../js/main.js"></script>
+        <script src="../js/dashboard.js"></script>
+    </body>
+</html>
